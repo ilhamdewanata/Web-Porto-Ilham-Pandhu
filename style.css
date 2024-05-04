@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    background: grey;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+
+.pre-title{
+    letter-spacing: 0.5rem;
+    color: rgb(37, 35, 35);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 350;
+    font-size: 1rem;
+}
+
+.pre-title::before{
+    text-transform: uppercase;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-left: 2rem;
+}
+
+.logo a {
+    color: blueviolet;
+}
+
+.nav ul li a{
+    color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+.nav ul{
+    list-style: none;
+    display: -webkit-flex;
+    gap: 2rem;
+    background-color: blueviolet;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border:1.1px solid black;
+    grid-template-columns: repeat(auto-fit);
+}
+
+/* Home Section */
+
+#Home{
+    height: 570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: black;
+}
+
+
+.Home-left img{
+    border-radius: 0.5rem;
+    width: 390px;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.Home-left{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* About */
+#About {
+    background-color: rgb(159, 125, 173);
+    padding: 3.5rem 0;
+}
+
+.section-title-service{
+    text-align: center;
+    margin: 1rem 0 1.6rem;
+}
+
+/* layout */
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.About{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #353839;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+.About h4{
+    color: white ;
+    margin: 0.5rem 0;
+}
+
+.About p{
+    color: white ;
+}
+
+.about-icon{
+    background-color: rgb(159, 125, 173);
+    width: fit-content;
+    margin: auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.section-title-service2{
+    text-align: center;
+    margin: 5rem 0 1.6rem;   
+}
+
+/* start of contact */
+
+#contact{
+    padding: 6rem;
+}
+
+.contact-1 input,
+.contact-1 textarea{
+    width: 100%;
+    padding: 0.7rem 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    resize: none;
+}
+
+.contact-1 input::placeholder,
+.contact-1 textarea::placeholder{
+    color: black;
+}
+
+.contact-1 input:focus,
+.contact-1 textarea:focus{
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn-submit{
+    width: 100%;
+    background-color: #353839;
+    padding: 0.75rem 1.3rem;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2;
+    -webkit-transition: 0.2;
+    -moz-transition: 0.2;
+    -ms-transition: 0.2;
+    -o-transition: 0.2;
+}
+
+.btn-submit:hover{
+    background-color: rgb(159, 125, 173);
+    color: black;
+}
+
+/* footer */
+
+footer{
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: rgb(159, 125, 173);
+    text-align: center
+}
+.footer-icons{
+    margin-bottom: 1rem;
+}
+
+.footer-icons a{
+    margin: o 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+
+.footer-icons a{
+    fill: grey;
+}
+
